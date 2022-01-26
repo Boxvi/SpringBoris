@@ -11,14 +11,16 @@ public class Cliente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nombre;
     private String apellido;
     private String email;
 
+
+
     @Column(name = "create_at")
     @Temporal(TemporalType.DATE)
     private Date create_at;
+
 
     public Long getId() {
         return id;
